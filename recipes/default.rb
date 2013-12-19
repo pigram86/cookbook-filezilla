@@ -19,9 +19,9 @@
 
 # install filezilla
 windows_package "FileZilla_3.7.3" do
-  source node[:filezilla][:url]
+  source node['filezilla']['url']
   action :install
-  not_if {::File.exists?(node[:filezilla][:file])}
+  not_if {::File.exists?(node['filezilla']['file'])}
   not_if {reboot_pending?}
 end
 
