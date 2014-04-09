@@ -1,0 +1,25 @@
+{
+  "chef": {
+    "chef_server_url":"https://api.opscode.com/organizations/clevcloud",
+    "validation_client_name":"clevcloud-validator",
+    "validation_key_path":"/Users/toddpigram/code/.chef/clevcloud-validator.pem",
+    "client_key":"/Users/toddpigram/code/.chef/toddpigram.pem",
+    "node_name":"toddpigram"
+  },
+  "vagrant": {
+    "vm": {
+      "box":"Berkshelf-CentOS-6.3-x86_64-minimal",
+      "box_url":"https://dl.dropbox.com/u/31081437/Berkshelf-CentOS-6.3-x86_64-minimal.box",
+      "forward_port": {
+
+      },
+      "network": {
+        "bridged":false,"hostonly":"33.33.33.10"
+      },
+        "provision":"chef_solo"
+   }
+  },
+  "ssl": {
+     "verify":true
+   }
+}
