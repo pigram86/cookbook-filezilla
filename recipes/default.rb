@@ -18,7 +18,7 @@
 #
 
 # install filezilla
-windows_package "FileZilla_3.7.3" do
+windows_package "FileZilla 3.7.3" do
   source node['filezilla']['url']
   action :install
   not_if {::File.exists?(node['filezilla']['file'])}
@@ -26,7 +26,7 @@ windows_package "FileZilla_3.7.3" do
 end
 
 # if feature installs, schedule a reboot at end of chef run
-windows_reboot 60 do
+windows_reboot 30 do
   reason 'reboot needed'
   only_if {reboot_pending?}
 end 

@@ -16,5 +16,5 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-default['filezilla']['url'] = "https://dl.dropboxusercontent.com/u/36379525/FileZilla_3.7.3_win32-setup.exe"
+default['filezilla']['url'] = "http://sourceforge.net/projects/filezilla/files/FileZilla_Client/3.9.0.2/FileZilla_3.9.0.2_win32-setup.exe/download"
 default['filezilla']['file'] = "C:/Program Files (x86)/FileZilla FTP Client/filezilla.exe"

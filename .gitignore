@@ -14,9 +14,6 @@ Gemfile.lock
 bin/*
 .bundle/*
 
-.kitchen/
-.kitchen.local.yml
-
 # Chef
 .chef/*.pem
 .chef/*.rb
@@ -70,3 +67,5 @@ Thumbs.db
 ehthumbs.db
 Desktop.ini
 $RECYCLE.BIN/
+
+
